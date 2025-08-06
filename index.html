@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun!</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d43b88;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+
+    h2 {
+      font-size: 1.3em;
+      color: #444;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    /* Media query untuk layar kecil (HP) */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 1em;
+      }
+      button {
+        width: 100%;
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎂 Selamat Ulang Tahun! 🎉</h1>
+  <h2>Semoga sehat selalu, panjang umur, sukses dan bahagia setiap hari 🎁</h2>
+  <h2>Jangan lupa bersyukur dan tetap semangat! 🥳</h2>
+  <p>Terima kasih telah hadir di dunia ini 💌</p>
+  
+  <button onclick="playMusic()">Mainkan Lagu</button>
+
+  <audio id="birthdaySong">
+    <source src="https://www.orangefreesounds.com/wp-content/uploads/2016/08/Happy-birthday-instrumental.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio HTML.
+  </audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("birthdaySong").play();
+    }
+  </script>
+
+</body>
+</html>
